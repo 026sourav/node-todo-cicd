@@ -32,6 +32,6 @@ deploy_job:
   script:
     - docker pull sourav1911/node-app:latest
     - docker-compose down || true
-    - docker compose up -d
+    - docker-compose up -d
   tags:
     - dev
